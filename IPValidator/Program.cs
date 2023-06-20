@@ -8,7 +8,7 @@ if (input == null)
     result = false;
 }
 
-var strings = input.Split('.');
+var strings = input.Split('.', StringSplitOptions.RemoveEmptyEntries);
 
 if (strings.Length != 4)
 {
